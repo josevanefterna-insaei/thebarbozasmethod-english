@@ -2,8 +2,7 @@
 @media(max-width:900px){.site-header nav{display:none;position:absolute;top:76px;left:0;right:0;background:#080808;padding:25px;flex-direction:column;border-bottom:1px solid var(--line)}.site-header nav.open{display:flex}.menu{display:block}.hero{height:auto;min-height:800px}.hero>img{object-position:62% center}.hero-shade{background:linear-gradient(90deg,#030303 0,rgba(3,3,3,.87) 55%,rgba(3,3,3,.28)),linear-gradient(0deg,#050505,transparent 35%)}.three,.four,.price-grid{grid-template-columns:1fr 1fr}.split,.split.reverse{grid-template-columns:1fr}.portrait{height:560px;max-width:500px;margin:auto}.price-card.complete{grid-template-columns:1fr}.price-card.complete>*{grid-column:1!important;grid-row:auto!important}}
 @media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.section{padding:78px 0}.hero{min-height:780px;align-items:flex-end;padding-bottom:45px}.hero>img{object-position:66% center}.hero-shade{background:linear-gradient(0deg,#050505 8%,rgba(3,3,3,.74) 65%,rgba(3,3,3,.25))}.hero h1{font-size:53px}.lead{font-size:15px}.actions{flex-direction:column}.stats{gap:18px;justify-content:space-between}.stats strong{font-size:28px}.three,.four,.price-grid{grid-template-columns:1fr}.stage{grid-template-columns:58px 1fr;padding:22px 18px}.stage>span{font-size:48px}.stage ul{display:block}.split{gap:36px}.portrait{height:480px}.mini-stats{gap:8px}.section-head h2,.authority h2,.proof h2,.final-cta h2{font-size:44px}.footer-grid{grid-template-columns:1fr;gap:35px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
-.regular-price{margin:22px 0 -12px!important;color:#8d8d91!important;font-size:12px!important}.price small{font-size:11px;letter-spacing:.5px}.complete h3{font-size:36px}
-/* SOCIAL PROOF */
+.regular-price{margin:22px 0 -12px!important;color:#8d8d91!important;font-size:12px!important}.price small{font-size:11px;letter-spacing:.5px}.complete h3{font-size:36px}/* SOCIAL PROOF */
 .proof-layout{
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -186,3 +185,4 @@
     padding:18px;
   }
 }
+
