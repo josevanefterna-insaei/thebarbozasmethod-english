@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Welcome | The Barboza Method</title>
+
+  <meta name="robots" content="noindex,nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --gold:#d7a52f;
+      --gold2:#f1cc66;
+      --black:#050505;
+      --panel:#111;
+      --text:#f7f7f7;
+      --muted:#a7a7aa;
+      --line:#2a2a2a;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      background:
+        radial-gradient(circle at 50% 0,rgba(215,165,47,.12),transparent 35%),
+        var(--black);
+      color:var(--text);
+      font-family:Montserrat,Arial,sans-serif;
+      line-height:1.65;
+    }
+
+    .wrap{
+      width:min(1050px,calc(100% - 40px));
+      margin:auto;
+    }
+
+    .header{
+      height:76px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-bottom:1px solid var(--line);
+      background:#050505;
+    }
+
+    .brand{
+      font-family:'Bebas Neue',sans-serif;
+      color:var(--gold2);
+      font-size:29px;
+      letter-spacing:1.5px;
+    }
+
+    main{
+      padding:75px 0 90px;
+    }
+
+    .intro{
+      max-width:820px;
+      margin:0 auto 55px;
+      text-align:center;
+    }
+
+    .check{
+      width:74px;
+      height:74px;
+      margin:0 auto 22px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:rgba(215,165,47,.10);
+      border:1px solid rgba(215,165,47,.55);
+      color:var(--gold2);
+      font-size:34px;
+      font-weight:800;
+    }
+
+    .eyebrow{
+      color:var(--gold2);
+      font-size:12px;
+      letter-spacing:2.1px;
+      font-weight:800;
+    }
+
+    h1,h2,h3{
+      font-family:'Bebas Neue',sans-serif;
+      letter-spacing:.5px;
+      line-height:1;
+    }
+
+    h1{
+      font-size:clamp(52px,7vw,82px);
+      margin:15px 0 20px;
+    }
+
+    h1 em,h2 em{
+      color:var(--gold2);
+      font-style:normal;
+    }
+
+    .intro>p{
+      max-width:700px;
+      margin:auto;
+      color:#ccc;
+      font-size:17px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-bottom:45px;
+    }
+
+    .step{
+      padding:30px;
+      background:linear-gradient(155deg,#161616,#0b0b0b);
+      border:1px solid var(--line);
+      border-radius:10px;
+    }
+
+    .number{
+      font-family:'Bebas Neue',sans-serif;
+      font-size:43px;
+      line-height:1;
+      color:var(--gold);
+      opacity:.65;
+    }
+
+    .step h3{
+      margin:15px 0 10px;
+      font-size:28px;
+    }
+
+    .step p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .access{
+      max-width:780px;
+      margin:auto;
+      padding:38px;
+      text-align:center;
+      border:1px solid rgba(215,165,47,.5);
+      border-radius:12px;
+      background:
+        linear-gradient(135deg,rgba(215,165,47,.10),rgba(215,165,47,.02)),
+        #0b0b0b;
+    }
+
+    .access h2{
+      margin:0 0 15px;
+      font-size:44px;
+    }
+
+    .access p{
+      max-width:600px;
+      margin:0 auto 27px;
+      color:var(--muted);
+    }
+
+    .button{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:58px;
+      padding:0 34px;
+      background:linear-gradient(135deg,var(--gold2),var(--gold));
+      color:#080808;
+      text-decoration:none;
+      font-size:14px;
+      font-weight:800;
+      letter-spacing:.5px;
+      border:1px solid var(--gold);
+      border-radius:4px;
+      box-shadow:0 8px 28px rgba(215,165,47,.18);
+      transition:.2s;
+    }
+
+    .button:hover{
+      transform:translateY(-2px);
+      filter:brightness(1.08);
+    }
+
+    .help{
+      margin-top:30px;
+      text-align:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .help strong{
+      color:#fff;
+    }
+
+    .closing{
+      margin-top:55px;
+      text-align:center;
+      color:var(--gold2);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:1.7px;
+    }
+
+    footer{
+      padding:25px 20px;
+      text-align:center;
+      border-top:1px solid var(--line);
+      background:#030303;
+      color:#666;
+      font-size:12px;
+    }
+
+    @media(max-width:800px){
+      .steps{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:620px){
+      .wrap{
+        width:min(100% - 28px,1050px);
+      }
+
+      main{
+        padding:50px 0 65px;
+      }
+
+      h1{
+        font-size:51px;
+      }
+
+      .intro>p{
+        font-size:15px;
+      }
+
+      .access{
+        padding:30px 20px;
+      }
+
+      .access h2{
+        font-size:37px;
+      }
+
+      .button{
+        width:100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="brand">THE BARBOZA METHOD</div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="intro">
+
+        <div class="check">✓</div>
+
+        <div class="eyebrow">
+          PURCHASE CONFIRMED
+        </div>
+
+        <h1>
+          WELCOME TO<br>
+          <em>THE BARBOZA METHOD.</em>
+        </h1>
+
+        <p>
+          Your purchase has been successfully completed.
+          You're now part of The Barboza Method and ready to begin
+          building your striking through a structured training system
+          developed from Edson Barboza's professional experience.
+        </p>
+
+      </section>
+
+      <section class="steps">
+
+        <div class="step">
+          <div class="number">01</div>
+          <h3>CHECK YOUR EMAIL</h3>
+          <p>
+            Your purchase confirmation and course access instructions
+            will be sent to the email address used during checkout.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="number">02</div>
+          <h3>ACCESS YOUR TRAINING</h3>
+          <p>
+            Follow the instructions in your email to access the members
+            area and enter your Barboza Method training.
+          </p>
+        </div>
+
+        <div class="step">
+          <div class="number">03</div>
+          <h3>FOLLOW THE PROGRESSION</h3>
+          <p>
+            Start with the first lesson of your level and follow the
+            training sequence. Each stage prepares you for what comes next.
+          </p>
+        </div>
+
+      </section>
+
+      <section class="access">
+
+        <h2>
+          YOUR TRAINING <em>STARTS NOW.</em>
+        </h2>
+
+        <p>
+          Access the members area to begin your training with
+          The Barboza Method.
+        </p>
+
+        <a class="button" href="#">
+          ACCESS MY TRAINING
+        </a>
+
+      </section>
+
+      <div class="help">
+        <strong>Didn't receive your access email?</strong><br>
+        Check your spam or promotions folder and make sure you're checking
+        the same email address used during your purchase.
+      </div>
+
+      <div class="closing">
+        TECHNIQUE · TIMING · PRECISION · PROGRESSION
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 Edson Barboza. All rights reserved.
+  </footer>
+
+</body>
+</html>
