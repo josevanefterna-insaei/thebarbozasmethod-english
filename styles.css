@@ -186,3 +186,32 @@
   }
 }
 
+/* COMPLETE SYSTEM PRICE ORDER FIX */
+.price-card.complete .compare{
+  grid-column:2;
+  grid-row:5;
+  margin:18px 0 4px;
+}
+
+.price-card.complete .regular-price{
+  grid-column:2;
+  grid-row:6;
+  margin:0 0 8px!important;
+  text-align:center;
+}
+
+.price-card.complete .price{
+  grid-column:2;
+  grid-row:7;
+  margin:10px 0 24px;
+}
+
+.price-card.complete .button{
+  grid-column:2;
+  grid-row:8;
+}
+
+.price-card.complete .guarantee{
+  grid-column:2;
+  grid-row:9;
+}
