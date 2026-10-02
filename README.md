@@ -1,35 +1,60 @@
-# The Barboza Method — US Sales Page
+# The Barboza Nutrition System — English Sales Page
 
-Página de vendas em inglês americano para o The Barboza Method, pronta para ser armazenada no GitHub e publicada pela Netlify.
+Official English sales page for **The Barboza Nutrition System**.
 
-## Estrutura
+Static website ready for deployment on GitHub and Netlify.
 
-- `index.html`: conteúdo completo da página.
-- `styles.css`: identidade visual e responsividade.
-- `script.js`: menu mobile e animações.
-- `assets/`: imagens utilizadas na página.
-- `netlify.toml`: configuração de publicação da Netlify.
-- `CHECKOUT-LINKS.md`: instruções para inserir os links de pagamento.
+## Product
 
-## Como colocar no GitHub
+**The Barboza Nutrition System**
 
-1. Entre em `github.com` e clique em **New repository**.
-2. Use um nome como `the-barboza-method-us`.
-3. Crie o repositório sem adicionar README, `.gitignore` ou licença.
-4. Dentro do novo repositório, selecione **Add file → Upload files**.
-5. Extraia o arquivo ZIP e envie todos os arquivos e a pasta `assets`.
-6. Clique em **Commit changes**.
+Two nutritional approaches in one practical digital system:
 
-## Como publicar pela Netlify
+- Carnivore Nutrition Guide
+- Carnivore Nutrition Plan
+- Animal-Based Nutrition Guide
+- Animal-Based Nutrition Plan
+- Recipe Collections
+- Meat Safety and Storage Guide
 
-1. Na Netlify, escolha **Add new site → Import an existing project**.
-2. Selecione o GitHub e autorize o acesso ao repositório.
-3. Escolha `the-barboza-method-us`.
-4. A Netlify reconhecerá o arquivo `netlify.toml`; não é necessário informar comando de build.
-5. Clique em **Deploy site**.
+Nutrition content by **Anna Clara Barboza — Nutritionist — CRN 23102300**.
 
-Depois disso, alterações enviadas ao repositório serão publicadas automaticamente pela Netlify.
+## Offer
 
-## Alterações futuras
+**Regular Price:** US$19.90  
+**Launch Price:** US$14.90  
+**Payment:** One-time payment
 
-Textos, preços e links podem ser atualizados diretamente no `index.html`. Para mudanças visuais, edite o `styles.css`.
+## Checkout
+
+Launch offer:
+
+https://pay.hotmart.com/S107707449W?off=5yldr4qq
+
+The checkout URL is configured in `script.js`.
+
+## Project Structure
+
+- `index.html` — English sales page
+- `styles.css` — page styling and responsive layout
+- `script.js` — Hotmart checkout configuration
+- `barboza-nutrition-system-mockup-EN.PNG` — English product mockup
+- `carnivora-animal-based-comparison.png` — visual comparison of the two nutritional approaches
+- `barboza-logo.jpeg` — official Barboza logo
+
+## Deployment
+
+This is a static website.
+
+**Netlify**
+- Production branch: `main`
+- Build command: none
+- Publish directory: repository root
+
+## Live Website
+
+https://the-barboza-nutrition-system-english.netlify.app/
+
+---
+
+© 2026 The Barboza Method. All rights reserved.
