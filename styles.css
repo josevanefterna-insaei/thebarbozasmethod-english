@@ -236,3 +236,106 @@
 #fight-club .section-head:last-child strong{
   color:var(--gold2);
 }
+
+
+/* ===== BARBOZA FOOTER — SOCIAL / LEGAL / BRAND ===== */
+
+.footer-social{
+  margin-top:24px;
+}
+
+.footer-social b{
+  display:block;
+  color:#fff;
+  margin-bottom:6px;
+}
+
+.footer-social p{
+  max-width:460px;
+  margin-bottom:16px;
+  color:#aaa;
+}
+
+.social-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 18px;
+  border:1px solid rgba(215,165,47,.45);
+  border-radius:999px;
+  color:var(--gold2);
+  font-weight:800;
+  text-decoration:none;
+  transition:.2s ease;
+}
+
+.social-button:hover{
+  background:var(--gold);
+  color:#000;
+}
+
+.legal-notice{
+  margin-top:42px;
+  padding-top:32px;
+  padding-bottom:32px;
+  border-top:1px solid rgba(255,255,255,.10);
+  text-align:center;
+}
+
+.legal-notice h3{
+  color:var(--gold2);
+  margin:0 0 18px;
+  letter-spacing:.08em;
+}
+
+.legal-notice p{
+  max-width:900px;
+  margin:8px auto;
+  color:#aaa;
+  line-height:1.7;
+}
+
+.legal-notice strong{
+  display:block;
+  margin-top:18px;
+  color:#fff;
+}
+
+.legal-notice strong span{
+  color:var(--gold2);
+}
+
+.barboza-footer-brand{
+  padding:30px 0;
+  border-top:1px solid rgba(255,255,255,.10);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.barboza-footer-brand img{
+  display:block;
+  width:220px;
+  max-width:60%;
+  height:auto;
+  object-fit:contain;
+}
+
+.copyright{
+  padding:24px 0;
+  border-top:1px solid rgba(255,255,255,.10);
+  color:#777;
+  font-size:14px;
+  text-align:center;
+}
+
+@media(max-width:700px){
+  .legal-notice{
+    margin-top:32px;
+    padding-top:28px;
+  }
+
+  .barboza-footer-brand img{
+    width:180px;
+  }
+}
