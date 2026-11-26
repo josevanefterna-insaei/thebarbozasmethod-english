@@ -1,9 +1,9 @@
 (() => {
   const checkouts = {
-  "beginner": "",
-  "intermediate": "",
-  "advanced": "",
-  "complete": ""
+  "beginner": "https://pay.hotmart.com/P107480454P?off=bp4njgd1",
+  "intermediate": "https://pay.hotmart.com/T107480461M?off=tu1pkj4p",
+  "advanced": "https://pay.hotmart.com/I107481897W?off=cnje3qn6",
+  "complete": "https://pay.hotmart.com/C107486132E?off=8i77ds6d"
 };
   if (!Object.values(checkouts).every(Boolean)) return;
 
