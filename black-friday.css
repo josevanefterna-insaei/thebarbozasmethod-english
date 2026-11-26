@@ -1,0 +1,24 @@
+[data-bf-only][hidden],[data-bf-normal][hidden]{display:none!important}
+.bf-hero-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.65rem 1rem;width:min(100%,38rem);margin:0 0 1.15rem;padding:.65rem .82rem;border:1px solid var(--bf-accent);border-radius:.5rem;background:var(--bf-surface);color:var(--bf-ink);font-size:.78rem;font-weight:600;line-height:1.45}
+.bf-hero-copy{display:grid;gap:.1rem}
+.bf-hero-copy strong{color:var(--bf-accent);font-size:.83rem;letter-spacing:.075em}
+.bf-hero-cta,.bf-percent{background:var(--bf-accent);color:var(--bf-on-accent);font-weight:700}
+.bf-hero-cta{border-radius:.3rem;padding:.4rem .65rem;white-space:nowrap}
+.bf-hero-cta:hover{text-decoration:underline}
+.bf-price{display:grid;gap:.36rem;margin:1rem 0}
+.bf-previous{color:var(--muted);font-size:.78rem}
+.bf-previous del{font:inherit;text-decoration-thickness:1.5px}
+.bf-price-label{display:flex;align-items:center;gap:.45rem;flex-wrap:wrap;color:var(--bf-accent);font-size:.69rem;font-weight:700;letter-spacing:.07em}
+.bf-percent{border-radius:99px;padding:.24rem .48rem;white-space:nowrap}
+.bf-amount{display:block;white-space:nowrap}
+:root{--bf-accent:var(--gold2);--bf-surface:var(--black);--bf-ink:var(--text);--bf-on-accent:var(--black)}
+.bf-amount{color:var(--gold2);font:400 clamp(2.5rem,12vw,60px)/1 'Bebas Neue',sans-serif}
+.price-card .bf-comparison{color:var(--gold2);font-size:.83rem;margin:0 0 1rem}
+@media(min-width:901px){.price-card.complete .bf-price,.price-card.complete .bf-comparison{grid-column:2}}
+.bf-nutrition-section{padding:clamp(3.5rem,8vw,6rem) 0;background:var(--black);color:var(--text)}
+.bf-nutrition-card{padding:clamp(1.5rem,4vw,3.35rem);display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:clamp(1.5rem,5vw,4rem);border:1px solid var(--gold2);border-radius:.75rem;background:color-mix(in srgb,var(--gold2) 7%,var(--black))}
+.bf-nutrition-card h2{font:400 clamp(2.55rem,6vw,4.65rem)/.98 'Bebas Neue',sans-serif;margin:0 0 1rem}
+.bf-nutrition-card h2 span{color:var(--gold2)}
+.bf-nutrition-card p{margin:0 0 1.5rem;color:var(--muted);max-width:33rem}
+.bf-nutrition-card img{display:block;width:100%;height:auto;border-radius:.5rem}
+@media(max-width:767px){.bf-nutrition-card{grid-template-columns:1fr}.bf-nutrition-card img{max-width:30rem;margin:auto}}

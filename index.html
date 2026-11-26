@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="black-friday.css">
+  <script defer src="black-friday.js"></script>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -25,6 +27,7 @@
       <img src="assets/hero.png" alt="Edson Barboza in a fighting stance">
       <div class="hero-shade"></div>
       <div class="wrap hero-content reveal">
+        <aside class="bf-hero-bar" data-bf-only hidden aria-label="Black Friday"><div class="bf-hero-copy"><strong>BLACK FRIDAY · 50% OFF</strong><span>Nov 26 at noon to Nov 28 at noon · Brasília time (UTC−3)</span></div><a class="bf-hero-cta" href="#pricing">See offer →</a></aside>
         <p class="eyebrow"><span></span> U.S. LAUNCH ENROLLMENT</p>
         <h1>TRAIN LIKE<br><em>EDSON BARBOZA.</em></h1>
         <p class="lead">FIGHT SMARTER. MOVE BETTER. HIT WITH PURPOSE.</p>
@@ -211,9 +214,10 @@
     <li>Training routine</li>
     <li>12 months of access</li>
   </ul>
-  <p class="regular-price">Regular price: <s>US$99</s></p>
-  <div class="price"><small>LAUNCH PRICE · US$</small>79</div>
-  <a class="button outline" href="https://pay.hotmart.com/P107480454P?off=vwthl9np&checkoutMode=10">CHOOSE BEGINNER</a>
+  <p data-bf-normal class="regular-price">Regular price: <s>US$99</s></p>
+  <div data-bf-normal class="price"><small>LAUNCH PRICE · US$</small>79</div>
+  <div class="bf-price" data-bf-only hidden><span class="bf-previous">Current launch price <del>US$ 79.00</del></span><div class="bf-price-label"><span>BLACK FRIDAY PRICE</span><span class="bf-percent">50% OFF</span></div><strong class="bf-amount">US$ 39.50</strong></div>
+  <a class="button outline" data-bf-checkout="beginner" href="https://pay.hotmart.com/P107480454P?off=vwthl9np&checkoutMode=10">CHOOSE BEGINNER</a>
 </article>
           <article class="price-card reveal">
   <p class="level">LEVEL 2</p>
@@ -227,9 +231,10 @@
     <li>Fight strategy and decision-making</li>
     <li>12 months of access</li>
   </ul>
-  <p class="regular-price">Regular price: <s>US$129</s></p>
-  <div class="price"><small>LAUNCH PRICE · US$</small>99</div>
-  <a class="button outline" href="https://pay.hotmart.com/T107480461M?off=klq23ozo&checkoutMode=10">CHOOSE INTERMEDIATE</a>
+  <p data-bf-normal class="regular-price">Regular price: <s>US$129</s></p>
+  <div data-bf-normal class="price"><small>LAUNCH PRICE · US$</small>99</div>
+  <div class="bf-price" data-bf-only hidden><span class="bf-previous">Current launch price <del>US$ 99.00</del></span><div class="bf-price-label"><span>BLACK FRIDAY PRICE</span><span class="bf-percent">50% OFF</span></div><strong class="bf-amount">US$ 49.50</strong></div>
+  <a class="button outline" data-bf-checkout="intermediate" href="https://pay.hotmart.com/T107480461M?off=klq23ozo&checkoutMode=10">CHOOSE INTERMEDIATE</a>
 </article>
           <article class="price-card reveal">
   <p class="level">LEVEL 3</p>
@@ -243,9 +248,10 @@
     <li>Advanced and signature techniques</li>
     <li>12 months of access</li>
   </ul>
-  <p class="regular-price">Regular price: <s>US$179</s></p>
-  <div class="price"><small>LAUNCH PRICE · US$</small>139</div>
-  <a class="button outline" href="https://pay.hotmart.com/I107481897W?off=jkyhbzsc&checkoutMode=10">CHOOSE ADVANCED</a>
+  <p data-bf-normal class="regular-price">Regular price: <s>US$179</s></p>
+  <div data-bf-normal class="price"><small>LAUNCH PRICE · US$</small>139</div>
+  <div class="bf-price" data-bf-only hidden><span class="bf-previous">Current launch price <del>US$ 139.00</del></span><div class="bf-price-label"><span>BLACK FRIDAY PRICE</span><span class="bf-percent">50% OFF</span></div><strong class="bf-amount">US$ 69.50</strong></div>
+  <a class="button outline" data-bf-checkout="advanced" href="https://pay.hotmart.com/I107481897W?off=jkyhbzsc&checkoutMode=10">CHOOSE ADVANCED</a>
 </article>
           <article class="price-card complete reveal">
   <p class="badge">RECOMMENDED · COMPLETE METHOD</p>
@@ -263,23 +269,36 @@
     <li>12 months of access</li>
   </ul>
 
-  <p class="compare">
+  <p class="compare" data-bf-normal>
     BUY THE 3 LEVELS SEPARATELY: <s>US$317</s><br>
     GET THE COMPLETE METHOD FOR US$247<br>
     <strong>SAVE US$70 + GET 2 EXCLUSIVE BONUSES</strong>
   </p>
 
-  <div class="price">
+  <div class="price" data-bf-normal>
     <small>LAUNCH PRICE · US$</small>247
   </div>
+  <div class="bf-price" data-bf-only hidden><span class="bf-previous">Current launch price <del>US$ 247.00</del></span><div class="bf-price-label"><span>BLACK FRIDAY PRICE</span><span class="bf-percent">50% OFF</span></div><strong class="bf-amount">US$ 123.50</strong></div>
+  <p class="bf-comparison" data-bf-only hidden>Save US$ 35.00 compared with buying all three levels separately in this sale and get 2 bonuses.</p>
 
-  <a class="button" href="https://pay.hotmart.com/C107486132E">GET THE COMPLETE BARBOZA METHOD</a>
+  <a class="button" data-bf-checkout="complete" href="https://pay.hotmart.com/C107486132E">GET THE COMPLETE BARBOZA METHOD</a>
 
   <p class="guarantee">
     12 months of course access · Secure purchase · 7-day money-back guarantee
   </p>
 </article>
         </div>
+      </div>
+    </section>
+
+    <section class="bf-nutrition-section" id="nutrition-system" aria-labelledby="nutrition-heading">
+      <div class="wrap bf-nutrition-card">
+        <div>
+          <h2 id="nutrition-heading">THE BARBOZA <span>NUTRITION SYSTEM</span></h2>
+          <p>Explore the Carnivore and Animal-Based approaches with guides, meal plans and recipes that help you put what you learn into practice.</p>
+          <a class="button" href="https://the-barboza-nutrition-system-english.netlify.app/" target="_blank" rel="noopener noreferrer">EXPLORE THE NUTRITION SYSTEM <span aria-hidden="true">↗</span></a>
+        </div>
+        <img src="https://the-barboza-nutrition-system-english.netlify.app/barboza-nutrition-system-mockup-EN.PNG" alt="The Barboza Nutrition System guides and materials in English" loading="lazy">
       </div>
     </section>
 
